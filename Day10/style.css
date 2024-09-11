@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin:0 ;padding: 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header */
+.header-area{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo h2{
+    font-size: 40px;
+}
+.menubar ul{
+    margin-left: 50px;
+    display: flex;
+
+}
+.menubar ul li {
+    margin-left:20px;
+    list-style: none;
+}
+.menubar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+}
+.header-inp input{
+    padding: 10px 20px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.header-inp input:nth-child(1){
+    border: none;
+}
+
+/* Hero Area */
+.hero-area{
+    width: 100%;
+    display: flex; 
+}
+.hero-content{
+    width: 50%;
+}
+.hero-content .hero-text{
+    width:60%;
+    padding: 50px;
+    margin-left: 180px;
+}
+
+.hero-content .hero-text h2{
+    font-size: 50px;
+    margin-right: 25px;
+}
+.hero-content .hero-text p{
+    padding: 20px 0px;
+}
+.hero-content .hero-text button{
+    padding: 10px 20px;
+    margin-top: 25px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-content .hero-brand-img img{
+    width: 100%;
+    margin-left: 100px;
+}
