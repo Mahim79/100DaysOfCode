@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.main-container{
+    width: 50vw;
+    height: 70vh;
+    margin:100px auto;
+    position: relative;
+}
+.content{
+    width: 35vw;
+    height: 70vh;
+    background: #FECF1C;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    float: right;
+}
+.img img{
+    width: 15vw;
+    height: 71vh;
+    position: absolute;
+    top:0px;
+}
+.content-title h1{
+    padding:25px 50px;
+    font-size:30px;
+    color:rgb(56, 56, 56)
+}
+.input {
+    padding:25px 50px;
+    color:rgb(255, 245, 245);
+
+}
+.input input{
+    padding: 10px 0px;
+    width:28vw;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    outline: none;
+    margin-bottom:10px;
+}
+#expire,#cvc {
+    width:9vw;
+}
+
+.cvc-text label:nth-child(2){
+    margin-left: 145px;
+}
+.input input[type="checkbox"]{
+    width:30px;
+    margin-top: 50px;
+}
+.input input:last-child{
+    margin-top: 50px;
+    width:10vw;
+    background: green;
+    border-radius: 5px;
+    color:white;
+    padding:15px;
+    cursor: pointer;
+}
