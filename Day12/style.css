@@ -12,7 +12,7 @@
 }
 .content{
     width: 35vw;
-    height: 70vh;
+    height: 80vh;
     background: #FECF1C;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -30,7 +30,7 @@
     color:rgb(56, 56, 56)
 }
 .input {
-    padding:25px 50px;
+    padding:0px 50px;
     color:rgb(255, 245, 245);
 
 }
@@ -44,7 +44,7 @@
     margin-bottom:10px;
 }
 #expire,#cvc {
-    width:9vw;
+    width:8vw;
 }
 
 .cvc-text label:nth-child(2){
@@ -52,14 +52,13 @@
 }
 .input input[type="checkbox"]{
     width:30px;
-    margin-top: 50px;
 }
 .input input:last-child{
-    margin-top: 50px;
     width:10vw;
     background: green;
     border-radius: 5px;
     color:white;
     padding:15px;
     cursor: pointer;
+    margin:20px;
 }
