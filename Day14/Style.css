@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.container{
+    width:60vw;
+    margin:60px auto;
+
+}
+.container-area{
+    width:80%;
+    background: #7777fb;
+    margin: auto;
+    box-shadow:3px 5px 6px 2px #6e6e6e
+
+}
+i{
+    color: #7777fb;
+}
+.container-area .title h1{
+    font-size:2rem ;
+    color:whitesmoke;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.inp-area{
+    padding: 0px 5px;
+}
+.inp-area input{
+    width: 100%;
+    padding: 15px 20px;
+}
+.inp-area #fName , #lName{
+    width: 45%;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.fa-user{
+    position: relative;
+    top: 0rem;right:-2rem;
+}
+
+.inp-area #mail{
+    width: 94%;
+    margin: 1rem;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.fa-envelope{
+    position: relative;
+    top: 4rem;
+    left: -37rem;
+    font-size: 1rem;
+}
+
+.inp-area #pass, #confirm {
+    width: 45%;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.fa-lock{
+    position: relative;
+    top: 0rem;right:-2rem;
+}
+#country{
+    width:94%;
+    padding: 15px 20px;
+    margin: 1rem;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:gray;
+}
+.fa-globe{
+    position: relative;
+    top: 4rem;
+    left: -37rem;
+    font-size: 1rem;
+}
+#birth{
+    width:94%;
+    padding: 15px 20px;
+    margin: 1rem;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:gray;
+}
+.fa-calendar-days{
+    position: relative;
+    top: 3.2rem;
+    left: 1.5rem;
+    font-size: 1rem;
+}
+.DOB{
+    color:whitesmoke
+}
+
+#gender{
+    width: 5%;
+
+}
+.fa-person-dress{
+    position: relative;
+    top: 0rem;
+    left: 6.3rem;
+    font-size: 1rem;
+    color:black
+}
+.fa-person{
+   
+    color:black
+}
+.text a{
+    position: relative;
+    top: -1rem;
+    left: 26rem;
+    color:whitesmoke;
+}
+
+#res{
+    width: 94%;
+    margin: 1rem;
+    padding-left: 35px;
+    border: 1px solid whitesmoke;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #7777fb;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#res:hover{
+    transform: scale(0.9);
+}
