@@ -1,0 +1,15 @@
+@media (min-width: 699px) {
+  .container {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .container__left_img {
+    display: none;
+  }
+  .container__left_img2 {
+    display: block;
+  }
+}/*# sourceMappingURL=responsive.css.map */
