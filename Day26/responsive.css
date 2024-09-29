@@ -1,0 +1,139 @@
+/* Variables */
+/*mixin*/
+/* Inheritance */
+.mybtn {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+}
+
+@media (min-width: 528px) {
+  .footer__lists {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 820px) {
+  .header__left nav {
+    display: block;
+  }
+  .header__left {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  .header__menubar_list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .header__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .header__item a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .header__item i {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .header .header__right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 3rem;
+  }
+  .header .header__right img {
+    display: none;
+  }
+  .header .header__right button {
+    display: block;
+  }
+  .header__login {
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .header__signUp {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #ff505c;
+  }
+  /* About Section */
+  .about__area {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .about__left {
+    width: 50%;
+  }
+  .about__right {
+    width: 50%;
+  }
+  .about__mobile_img {
+    display: none;
+  }
+  .about__desktop_img {
+    display: block;
+  }
+  .app__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .app__bg {
+    padding: 2rem;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: -215px -25rem;
+  }
+  .app__content p {
+    padding: 0rem 5rem;
+  }
+  .feature__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .feature__left {
+    width: 50%;
+    margin-left: -20rem;
+  }
+  .feature__left img {
+    width: 150%;
+  }
+  .feature__right {
+    width: 50%;
+    padding-right: 3rem;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer__logo {
+    flex: 1;
+  }
+  .footer__lists {
+    flex: 3;
+  }
+}/*# sourceMappingURL=responsive.css.map */
