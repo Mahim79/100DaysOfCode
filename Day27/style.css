@@ -1,0 +1,94 @@
+@font-face {
+  font-family: RedHat;
+  src: url(fonts/RedHatText-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RedHat";
+}
+
+/* Variables */
+/* @extend */
+.addtocart, .container__card button {
+  background: white;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Style Sheet */
+body {
+  background: rgb(138, 79, 118);
+}
+
+.container__area {
+  padding: 2rem;
+}
+.container__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2.5rem;
+}
+.container__head h1 {
+  font-size: 2.2rem;
+}
+.container__head p {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.container__lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container__img_cart {
+  position: relative;
+}
+.container__card {
+  width: 350px;
+  margin-top: 1rem;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.container__card_img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container__card button {
+  position: absolute;
+  bottom: -8%;
+  left: 26%;
+}
+.container__card button img {
+  position: relative;
+  top: 2px;
+}
+.container__card_name {
+  font-size: 1.2rem;
+  color: gray;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+}
+.container__card_title {
+  font-size: 2rem;
+  color: rgb(43, 43, 43);
+  padding-left: 0.5rem;
+}
+.container__card h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+.container__card:hover {
+  transform: translatey(-8px);
+  box-shadow: 1px 3px 15px 1px rgb(49, 49, 49);
+}/*# sourceMappingURL=style.css.map */
