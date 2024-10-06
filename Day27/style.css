@@ -47,8 +47,9 @@ body {
 .container__lists {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .container__img_cart {
   position: relative;

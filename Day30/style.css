@@ -1,0 +1,237 @@
+/* Variables */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4c4d5f;
+  scroll-behavior: smooth;
+  background: #f4f4f8;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(244, 244, 248, 0.9098039216);
+  z-index: 1000;
+}
+.header__area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menubar {
+  display: none;
+}
+.header__hamburger {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header__hamburger:active {
+  color: #00b289;
+}
+
+/* Hero Area */
+.hero {
+  background-image: url(Images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__area {
+  margin-top: 5rem;
+}
+.hero__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hero__title_left h2 {
+  font-size: 1rem;
+  color: #4c4d5f;
+}
+.hero__title_right {
+  position: relative;
+}
+.hero__title_right img {
+  width: 100px;
+  position: absolute;
+  top: -25px;
+  right: -15px;
+}
+.hero__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__price i {
+  font-size: 1.5rem;
+  color: #00b289;
+  cursor: pointer;
+}
+.hero__price p {
+  color: #4c4d5f;
+  font-size: 1rem;
+}
+.hero__price p:nth-of-type(2) {
+  color: gray;
+}
+.hero__card {
+  width: 320px;
+  height: 650px;
+  margin: 5rem auto 0rem auto;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
+}
+.hero__card_title h2 {
+  font-size: 1.5rem;
+  color: #4c4d5f;
+}
+.hero__card_title p {
+  color: gray;
+  font-size: 0.8rem;
+  padding: 1rem 1rem 1rem 0;
+}
+.hero__card_amount {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #00b289;
+}
+.hero__card_amount span:nth-of-type(2) {
+  font-size: 3rem;
+  color: #4c4d5f;
+}
+.hero__card_duration span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.hero__card_list {
+  margin-top: 2rem;
+}
+.hero__card_item {
+  list-style: none;
+  padding: 0.4rem 0;
+}
+.hero__card_item i {
+  color: #00b289;
+  margin: 0rem 0.5rem;
+}
+.hero__card_btn {
+  text-align: center;
+}
+.hero__card_btn button {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  width: 90%;
+  background: #00b289;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hero__card_btn button:hover {
+  background: #009b77;
+}
+
+/* Pricing Section */
+.pricing__area {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+.pricing__title {
+  text-align: center;
+}
+.pricing__box {
+  padding: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 5px;
+}
+.pricing__amount {
+  font-size: 2rem;
+}
+.pricing__amount p:nth-of-type(2) {
+  font-size: 1rem;
+}
+.pricing__subtitle {
+  margin: 1rem 0;
+}
+.pricing__subtitle a {
+  display: inline-block;
+  color: #00b289;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Grow Area */
+.grow {
+  margin: 5rem 0;
+}
+.grow__area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f2faff;
+}
+.grow__left span {
+  color: #00b289;
+}
+.grow__right {
+  margin-top: 1rem;
+}
+.grow__right button {
+  padding: 0.5rem 1rem;
+  background: #00b289;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.grow__right button:hover {
+  background: #009b77;
+}
+
+/* FAQ Section Area */
+.faq__area {
+  margin-top: 5rem;
+}
+.faq__title {
+  color: #00b289;
+  text-align: center;
+  font-size: 2rem;
+}
+.faq__container {
+  width: 60%;
+  margin: 2rem auto;
+}
+.faq__item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq__item:hover {
+  color: #00b289;
+}/*# sourceMappingURL=style.css.map */

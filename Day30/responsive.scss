@@ -1,0 +1,144 @@
+
+/* Variables */
+$gray:#4c4d5f;
+$green:#00b289;
+$yellow:#f8db62;
+$white:#fff;
+
+
+@media (min-width:768px) {
+    
+    .header{
+    
+        &__area{
+            
+        }
+    
+        &__right{
+    
+        }
+        &__hamburger{
+            display: none;
+        }
+        &__menubar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-right: 2rem;
+        }
+        &__item{
+            list-style-type: none;
+        }
+        &__link{
+            text-decoration: none;
+            color:$gray;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        &__link:hover{
+            color:$green;
+        }
+        
+        &__menubar_right{
+            & input{
+                    padding: 0.5rem 1rem;
+                    border:1px solid $green;
+                    color:$green;
+                    background:none;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    cursor: pointer;    
+            }
+            & input:hover{
+                    color:$white;
+                    background:$green;    
+            }
+            & button{
+                padding: 0.5rem 1rem;
+                border:1px solid $green;
+                color:$white;
+                background:$green;
+                border-radius: 10px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
+
+    /* Hero Area */
+
+    .hero{
+        
+
+        &__title{
+            justify-content: center;
+            gap: 3rem;
+        }
+        &__title_left h2{
+            font-size:3rem;
+        }
+        &__title_right{
+            & img{
+                width:150px;
+                top:-35px;
+            }
+            
+        }
+        &__price{
+
+            & i{
+                font-size: 2rem;
+            }
+             & p{
+                font-size:1.5rem;
+             }
+        }
+
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap:1rem;
+        }
+    }
+
+    /* Pricing Area */
+    .pricing{
+
+        &__box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+
+        }
+    }
+    /* Grow Area */
+    .grow{
+
+        &__area{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__left{
+            width: 60%;
+            font-size: 2rem;
+        }
+        &__right{
+            width:40%;
+            text-align: end;
+
+            button{
+                font-size:1.2rem;
+            }
+        }
+    }
+}
