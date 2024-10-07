@@ -1,0 +1,188 @@
+/* Variables */
+/* Inheritance */
+.app__btn button, .header__btn button {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+/* Header Area */
+.header {
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+}
+.header__area {
+  text-align: center;
+  padding-top: 5rem;
+}
+.header__title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.header__para {
+  color: #C1C4C5;
+  padding: 1rem;
+}
+.header__btn {
+  margin-top: 2rem;
+}
+.header__btn button {
+  background: #27BBA5;
+  color: #fff;
+}
+.header__btn button:nth-of-type(2) {
+  background: #6074FE;
+}
+
+/* Hero Area */
+.hero__area {
+  text-align: center;
+}
+.hero__title {
+  font-size: 2rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.hero__para {
+  color: #C1C4C5;
+  padding: 1rem;
+}
+.hero__bottom {
+  margin-top: 3rem;
+}
+.hero__img img {
+  width: 80%;
+}
+.hero__content_item {
+  margin-top: 2rem;
+}
+.hero__content__subtitle {
+  font-size: 1.5rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.hero__content_para {
+  color: #C1C4C5;
+  padding: 0 3rem;
+  line-height: 2rem;
+}
+
+/* Access Section Area */
+.access__area {
+  text-align: center;
+}
+.access__title {
+  font-size: 2rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.access__para {
+  color: #C1C4C5;
+  padding: 0 2rem;
+}
+.access__img {
+  margin-top: 5rem;
+}
+.access__img img {
+  width: 70%;
+}
+
+/* Feature Section Area */
+.feature__area {
+  text-align: center;
+}
+.feature__title {
+  font-size: 2rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.feature__para {
+  color: #C1C4C5;
+  padding: 0 1rem;
+}
+.feature__item {
+  margin-top: 3rem;
+}
+.feature__item_para {
+  color: #C1C4C5;
+  padding: 0 2rem;
+}
+.feature__subtitle {
+  font-size: 1.5rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.feature__icon img {
+  display: block;
+  margin: 3rem auto;
+}
+
+/* App Section Area */
+.app__area {
+  text-align: center;
+}
+.app__title {
+  font-size: 2rem;
+  color: #40474B;
+  padding: 1rem;
+}
+.app__para {
+  color: #C1C4C5;
+  line-height: 1.5rem;
+}
+.app__btn {
+  margin-top: 2rem;
+}
+.app__btn button {
+  background: #27BBA5;
+  color: #fff;
+}
+.app__btn button:nth-of-type(2) {
+  background: #6074FE;
+}
+
+/* Footer Area */
+.footer {
+  background: rgb(243, 243, 243);
+}
+.footer__area {
+  padding: 2rem;
+  text-align: center;
+}
+.footer__link {
+  text-decoration: none;
+  color: #C1C4C5;
+  margin-top: 2rem;
+  display: block;
+  font-size: 1.5rem;
+}
+.footer__link:hover {
+  color: #40474B;
+}
+.footer__right {
+  margin: 3rem 0;
+}
+.footer__right img {
+  width: 40px;
+  margin: 0 1rem;
+}/*# sourceMappingURL=style.css.map */

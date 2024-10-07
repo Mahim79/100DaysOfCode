@@ -1,0 +1,51 @@
+/* Variables */
+/* Inheritance */
+@media (min-width: 768px) {
+  .header__btn, .app__btn {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+  }
+  .hero__top {
+    width: 50%;
+    margin: auto;
+  }
+  .hero__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20rem;
+  }
+  .hero__content {
+    width: 30%;
+    text-align: justify;
+  }
+  .hero__content_para {
+    padding: 0;
+  }
+  .feature__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .feature__list * {
+    flex: 1;
+  }
+  .feature__icon {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .feature__icon img {
+    width: 10%;
+  }
+  .footer__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=responsive.css.map */
