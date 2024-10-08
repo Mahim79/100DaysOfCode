@@ -1,0 +1,75 @@
+@media (min-width:664px) {
+    .home{
+        background-image: url(home-img/background-home-tablet.jpg);
+    }
+}
+
+@media (min-width:1068px) {
+    
+    .home{
+        background-image: url(home-img/background-home-desktop.jpg);
+        padding: 2rem 0 2rem 2rem;
+        &__area{
+            align-items: center;
+
+        }
+        &__hamburger{
+            display: none;
+        }
+        &__nav{
+            display: block;
+            
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(100px);
+            padding: 2rem 0;
+        }
+        &__item{
+            list-style:none;
+            padding-left: 5rem;
+            display: flex;
+            gap:0.5rem;
+        }
+        &__link{
+            text-decoration: none;
+            padding-right:  2rem;
+            color:#ffffff98;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        &__link:hover{
+            color:#fff;
+        }
+        &__serial{
+            color:#fff;
+            font-weight: 600;
+        }
+    }
+    .hero{
+        &__area{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &__area *{
+            flex:2
+        }
+        &__title_highlight{
+            font-size:10rem;
+            font-family: fantasy;
+        }
+        &__right{
+            
+            &_box{
+                width: 300px;
+                height: 300px;
+                padding-top: 3rem;
+
+            }
+        }
+    }
+}
+
