@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+body{
+    color: #fff;
+
+}
+.container{
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+/* Navigation Bar */
+.home__area{
+    padding: 2rem;
+    position:sticky;
+    top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.home__nav{
+    display: none;
+}
+
+/* Destination */
+.destination{
+    background-image: url(destination-img/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__area{
+        text-align: center;
+    }
+    
+    &__top{
+        img{
+            width: 60%;
+            padding: 2rem 0;
+        }
+    }
+    &__serial{
+        color: gray;
+        font-weight: 600;
+        padding: 1rem;
+    }
+    &__title{
+        color:#e2e2e2;
+        letter-spacing:0.5rem;
+        padding: 1rem 0;
+    }
+
+    &__bottom{
+        margin-left: 2rem;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        gap: 1rem;
+        padding: 2rem 0;
+        
+
+        & :nth-last-of-type(3){
+            border-bottom: 2px solid #fff;
+        }
+    }
+    &__item{
+        color: #9193AA;
+        list-style: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__mars{
+        text-align: start;
+        text-transform: uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-bottom: 1rem;
+    }
+    &__para{
+        text-align: start;
+        color:#9193AA;
+        line-height: 2rem;
+        border-bottom: 1px solid gray;
+        padding-bottom: 2rem;
+    }
+    &__details{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: start;
+
+        p{
+            color:#9193AA;
+        }
+        h3{
+            color: #BABEC3;
+            font-size: 1.5rem;
+            padding: 0.5rem 0;
+        }
+    }
+    
+
+}

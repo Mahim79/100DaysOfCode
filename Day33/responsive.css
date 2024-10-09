@@ -1,0 +1,78 @@
+@media (min-width: 664px) {
+  .destination {
+    background-image: url(destination-img/background-destination-tablet.jpg);
+  }
+}
+@media (min-width: 988px) {
+  /* Navigation */
+  .home__area {
+    padding: 2rem 0 2rem 2rem;
+  }
+  .home__area {
+    align-items: center;
+  }
+  .home__hamburger {
+    display: none;
+  }
+  .home__nav {
+    display: block;
+  }
+  .home__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+    padding: 2rem 0;
+  }
+  .home__item {
+    list-style: none;
+    padding-left: 5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .home__link {
+    text-decoration: none;
+    padding-right: 2rem;
+    color: rgba(255, 255, 255, 0.5960784314);
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .home__link:hover {
+    color: #fff;
+  }
+  .home__serial {
+    color: #fff;
+    font-weight: 600;
+  }
+  /* Destination */
+  .destination {
+    background-image: url(destination-img/background-destination-desktop.jpg);
+  }
+  .destination__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .destination__area * {
+    flex: 1;
+  }
+  .destination__list {
+    width: 300px;
+  }
+  .destination__item {
+    font-size: 1.5rem;
+  }
+  .destination__mars {
+    font-size: 3rem;
+  }
+  .destination__para {
+    font-size: 1.2rem;
+  }
+  .destination__details p {
+    font-size: 1.2rem;
+  }
+  .destination__details h3 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */
