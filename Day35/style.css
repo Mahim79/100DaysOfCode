@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  color: #fff;
+}
+
+.container {
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+/* Navigation Bar */
+.home__area {
+  padding: 2rem;
+  position: sticky;
+  top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.home__nav {
+  display: none;
+}
+
+.technology {
+  background-image: url(technology/background-technology-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.technology__top img {
+  width: 100%;
+  border-radius: 50%;
+  text-align: center;
+}
+.technology__bottom {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+.technology__serial {
+  color: #484953;
+  font-weight: 900;
+}
+.technology__headline {
+  font-weight: 100;
+}
+.technology__content {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+.technology__subtitle {
+  color: #9899A9;
+}
+.technology__title {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.technology__para {
+  color: #6C6F82;
+  line-height: 2.5rem;
+}
+.technology__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.technology__item {
+  list-style: none;
+  background: transparent;
+  border: 1px solid #6C6F82;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.technology__item:nth-of-type(1) {
+  background: #fff;
+  color: #484953;
+}/*# sourceMappingURL=style.css.map */
