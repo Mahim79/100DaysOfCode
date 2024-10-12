@@ -1,0 +1,63 @@
+@import "_variables";
+@import "_extend";
+/* Font Family */
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width:912px) {
+    .header{
+
+        
+        &__left{
+            gap: 2rem;
+            i{
+                display: none;
+            }
+        }
+        &__nevigation{
+            display: block;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        &__item{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: $gray-deep;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            a:hover{
+                color: $green;
+                border-bottom: 2px solid $green;
+                padding-bottom:0.5rem;
+            }
+
+        }
+    }
+    .hero{
+        background-size:cover;
+        &__area{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__btn{
+            border: 1px solid $bg-meroon;
+            background:transparent;
+        }
+        &__btn:hover{
+            background:$bg-meroon;
+        }
+    }
+}

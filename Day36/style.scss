@@ -1,0 +1,157 @@
+@import "_variables";
+@import "_extend";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+.container{
+    padding:1rem 2rem;
+}
+
+.nav__area{
+    background:$bg-meroon;
+}
+/* Header */
+.header{
+    position: sticky;
+    top:0.5rem;
+    z-index: 1000;
+
+    &__area{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:$white;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    &__left{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        i{
+            font-size:$size4;
+            cursor: pointer;
+            
+        }
+        i:hover{
+            color: $green;
+        }
+    }
+    &__logo{
+        color: $black;
+        font-size:1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        user-select: none;
+        cursor: pointer;
+        text-decoration: none;
+        color:$black;
+        font-weight:700;
+    }
+    &__nevigation{
+        display: none;
+    }
+    
+    &__right{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        i{
+           background:$green;
+           padding:0.5rem;
+           border-radius: 50%;
+           color: $white;
+        }
+    }
+    &__number{
+        border:2px solid $green;
+        padding: 0.5rem 1rem;
+        @extend .btn-size;
+
+    }
+    &__number:hover{
+        background:$green;
+        color:$white;
+    }
+}
+
+/* Hero */
+.hero{
+    background-image: url(images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:0 100%;
+    margin-top: 5rem;
+
+    &__top{
+        
+    }
+    &__hello{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h2{
+            @extend .btn-size;
+            cursor: auto;
+            font-size: $size4;
+        }
+    }
+    &__title{
+        display: inline-block;
+        @extend .btn-size;
+        cursor: auto;
+        font-size: $size4;
+        margin-top: 1rem;
+        color: $green;
+    }
+    &__btn{
+        display:block;
+        @extend .btn-size;
+        background:$bg-meroon;
+        color:$white;
+        border: 1px solid $white;
+        font-size: $size4;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background: $green;
+        color: $white;
+        border:none;
+    }
+
+    &__bottom{
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    &__circle{
+        width:300px;
+        height:300px;
+        background:$white;
+        border-radius: 50%;
+        position: relative;
+        margin: auto;
+    }
+    &__img{
+        width:400px;
+        position: absolute;
+        bottom: -50px;
+        right: -70px;
+    }
+}
