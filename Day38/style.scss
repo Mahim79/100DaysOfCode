@@ -1,0 +1,462 @@
+@import "_variables";
+@import "_extend";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+.container{
+    padding:1rem 2rem;
+}
+
+.nav__area{
+    background:$bg-meroon;
+}
+/* Header */
+.header{
+    width: 100%;
+    position: sticky;
+    top:0rem;
+    z-index: 1000;
+    background:$bg-meroon;
+
+    &__area{
+        
+        box-shadow: 1px 0px 100px 1px gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:$white;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    &__left{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        i{
+            font-size:$size4;
+            cursor: pointer;
+            
+        }
+        i:hover{
+            color: $green;
+        }
+    }
+    &__logo{
+        color: $black;
+        font-size:1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        user-select: none;
+        cursor: pointer;
+        text-decoration: none;
+        color:$black;
+        font-weight:700;
+    }
+    &__nevigation{
+        display: none;
+    }
+    
+    &__right{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        i{
+           background:$green;
+           padding:0.5rem;
+           border-radius: 50%;
+           color: $white;
+        }
+    }
+    &__number{
+        border:2px solid $green;
+        padding: 0.5rem 1rem;
+        @extend .btn-size;
+
+    }
+    &__number:hover{
+        background:$green;
+        color:$white;
+    }
+}
+
+/* Hero */
+.hero{
+    background:$bg-meroon;
+    background-image: url(images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:0 100%;
+
+    &__top{
+        
+    }
+    &__hello{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h2{
+            @extend .btn-size;
+            cursor: auto;
+            font-size: $size4;
+        }
+    }
+    &__title{
+        display: inline-block;
+        @extend .btn-size;
+        cursor: auto;
+        font-size: $size4;
+        margin-top: 1rem;
+        color: $green;
+    }
+    &__btn{
+        display:block;
+        @extend .btn-size;
+        background:$bg-meroon;
+        color:$white;
+        border: 1px solid $white;
+        font-size: $size4;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background: $green;
+        color: $white;
+        border:none;
+    }
+
+    &__bottom{
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    &__circle{
+        width:300px;
+        height:300px;
+        background:$white;
+        border-radius: 50%;
+        position: relative;
+        margin: auto;
+    }
+    &__img{
+        width:400px;
+        position: absolute;
+        bottom: -50px;
+        right: -70px;
+    }
+}
+
+/* About */
+.about{
+
+    &__area{
+        margin-top: 5rem;
+    }
+    &__top{
+
+        img{
+            width:400px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__bottom{
+
+    }
+    &__thumb{
+        width: 400px;
+        margin: 1rem auto;
+        padding: 2rem;
+        background: $green;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        h2{
+            font-size: $size4;
+            color: $white;
+            
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+    }
+    &__details{
+        width: 400px;
+        margin: 1rem auto;
+        padding: 1rem 0;
+
+        p{
+            padding-top: 1rem;
+            line-height: 1.5rem;
+            color:$gray;
+
+            a{
+                color: $green;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+/* Feature Area */
+
+.feature{
+    background: #f5f5f5;
+    padding: 3rem 0;
+    margin: 2rem 0;
+    &__table{
+        
+        table{
+            width: 400px;
+            margin: 1rem auto;
+            border: 1px solid $gray;
+            border-collapse: collapse;
+        }
+
+        table,tr,th,td{
+            padding: 1rem;
+        }
+        thead th{
+            border-bottom: 1px solid $gray;
+            color: $black;
+            font-size:$size4;
+            font-weight: 600;
+            text-align: start;
+        }
+        tbody tr:nth-of-type(odd){
+            background:#ececec;
+        }
+        tbody th{
+            border-right: 1px solid $gray;
+            text-align: start;
+            color: $green;
+        }
+        td{
+            color: $gray;
+        }
+
+        
+    }
+
+    &__data{
+        width: 400px;
+        margin: 2rem auto;
+        
+    }
+    &__list {
+        
+        .feature__item:nth-of-type(1){
+            
+            border-right: 1px solid gray;
+        }
+    }
+    &__list:nth-of-type(1){
+        width: 100%;
+       display: flex;
+       align-items: center;
+       border-bottom: 1px solid gray;
+        justify-content:center;
+        
+    }
+    &__list:nth-of-type(2){
+        width: 100%;
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    &__item{
+        padding:3rem 2rem;
+    }
+
+}
+
+/* Clients Section */
+.client{
+    
+
+    &__area{
+        padding: 3rem;
+        text-align: center;
+    }
+    &__title{
+        font-size: $size2;
+        color: $black;
+    }
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem 0;
+        img{
+            width:100px;
+            transition: all 0.5s;
+        }
+        img:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+}
+
+/* Service */
+.service{
+    background: #f5f5f5;
+
+    &__area{
+        width: 80%;
+        margin: 5rem auto;
+    }
+
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background:$green;
+        padding:2rem 1rem;
+        border-radius: 10px;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h2{
+            font-size: $size3;
+            color: $white;
+
+        }
+    }
+    &__container{
+    }
+
+    &__card{
+        width: 100%;
+        height: 500px;
+        margin: 1rem auto;
+        background: $white;
+        margin-top: 2rem;
+        padding: 2rem;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.5s;
+        border:2px solid $white;
+
+        &_head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $gray;
+            padding-bottom: 2rem;
+
+            h3{
+                background:$bg-meroon;
+                padding: 0.3rem 0.7rem;
+                border-radius: 30px;
+                color: $white;
+                position:relative;
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+        }
+        
+        p{
+            padding: 1rem 0;
+            font-size:1.2rem;
+            color: $gray;
+
+        }
+        
+    }
+    &__card:hover{
+        border:2px solid $green;
+
+        .service__icon{
+            background: $green;
+            border: 1px solid $green;
+
+            i{
+                color:$white;
+            }
+        }
+
+        .service__card_head h3{
+            background:$green;
+        }
+        .service__circle{
+            background:$bg-meroon;
+        }
+
+    }
+    &__circle{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background:$green;
+        position: absolute;
+        top: -4px;
+        right: -6px;
+        transition: all 0.5s;
+        }
+    &__btn{
+        @extend .btn-size;
+        background: transparent;
+        border: 1px solid $gray;
+        border-radius: 30px;
+        font-size:1.2rem;
+        color: $gray;
+        font-weight: 600;
+        display: block;
+        margin: 2rem 0;
+        transition: all 0.2s;
+    }
+    &__btn:hover{
+        background:$green;
+        color:$white;
+        border: 1px solid $green;
+    }
+    &__icon{
+        display: inline-block;
+        border: 1px solid $gray;
+        border-radius:10px;
+        position: absolute;
+        bottom: -50px;
+        right: -40px;
+        transform: rotate(-30deg);
+        transition: all 0.5s;
+        i{
+            padding: 45px 57px 100px 57px;
+            font-size: 5rem;
+            color: $black;
+            
+        }
+    }
+    
+}

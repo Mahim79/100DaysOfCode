@@ -1,0 +1,146 @@
+@import "_variables";
+@import "_extend";
+/* Font Family */
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width:912px) {
+    .header{
+
+        
+        &__left{
+            gap: 2rem;
+            i{
+                display: none;
+            }
+        }
+        &__nevigation{
+            display: block;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        &__item{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: $gray-deep;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            a:hover{
+                color: $green;
+                border-bottom: 2px solid $green;
+                padding-bottom:0.5rem;
+            }
+
+        }
+    }
+    .hero{
+        background-size:cover;
+        &__area{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__btn{
+            border: 1px solid $bg-meroon;
+            background:transparent;
+        }
+        &__btn:hover{
+            background:$bg-meroon;
+        }
+    }
+
+    /* About Section */
+    .about{
+
+        &__area{
+            display: flex;
+            align-items:flex-start;
+            justify-content:center;
+            gap: 2rem;
+        }
+        &__top{
+
+            img{
+                width:600px;
+            }
+        }
+        &__thumb{
+            width: 400px;
+            margin:0 auto;
+            
+            h2{
+                font-size: $size3;
+            }
+    
+            img{
+                width: 130px;
+                height: 130px;
+            }
+        }
+    }
+
+    /* Feature Section */
+
+    .feature{
+
+        &__area{
+            padding: 0 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+        &__table,
+        &__data{
+            width: 50%;
+        }
+    }
+
+    /* Service Section */
+    .service{
+       
+        &__head{  
+
+            img{
+                width:200px;
+                height:200px;
+                
+            }
+            h2{
+                font-size: 5rem;
+                
+            }
+        }
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__card{
+            width: 400px;
+        }
+        &__btn{
+            font-size: 1.5rem;
+        }
+        &__icon{
+
+            i{
+                padding:88px 80px;
+            }
+        }
+    }
+
+}

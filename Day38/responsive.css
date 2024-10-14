@@ -1,0 +1,120 @@
+/* Color */
+/* Font Size */
+.btn-size {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: black;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Font Family */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 912px) {
+  .header__left {
+    gap: 2rem;
+  }
+  .header__left i {
+    display: none;
+  }
+  .header__nevigation {
+    display: block;
+  }
+  .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .header__item {
+    list-style: none;
+  }
+  .header__item a {
+    text-decoration: none;
+    color: #616368;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .header__item a:hover {
+    color: #14B789;
+    border-bottom: 2px solid #14B789;
+    padding-bottom: 0.5rem;
+  }
+  .hero {
+    background-size: cover;
+  }
+  .hero__area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero__btn {
+    border: 1px solid #535da1;
+    background: transparent;
+  }
+  .hero__btn:hover {
+    background: #535da1;
+  }
+  /* About Section */
+  .about__area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about__top img {
+    width: 600px;
+  }
+  .about__thumb {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .about__thumb h2 {
+    font-size: 2.5rem;
+  }
+  .about__thumb img {
+    width: 130px;
+    height: 130px;
+  }
+  /* Feature Section */
+  .feature__area {
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .feature__table, .feature__data {
+    width: 50%;
+  }
+  /* Service Section */
+  .service__head img {
+    width: 200px;
+    height: 200px;
+  }
+  .service__head h2 {
+    font-size: 5rem;
+  }
+  .service__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .service__card {
+    width: 400px;
+  }
+  .service__btn {
+    font-size: 1.5rem;
+  }
+  .service__icon i {
+    padding: 88px 80px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
