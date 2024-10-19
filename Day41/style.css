@@ -1,0 +1,123 @@
+@font-face {
+    font-family: fontawesome;
+    src: url(fonts/fontawesome-webfont.ttf);
+}
+/* Variables */
+:root{
+    --orange:#F0390F;
+    --blue:#3E0BCE;
+    --gray:#5E5D5E;
+    --black:#2D2C2C;
+    --white:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mycontainer{
+    padding: 2rem;
+}
+.mybtn,
+.header__link:hover{
+    background:var(--orange);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+
+/* Header */
+.header__right img{
+    cursor: pointer;
+}
+.header__list{
+    list-style: none;
+}
+
+.header__link{
+    text-decoration: none;
+    color:var(--gray);
+    font-weight:600;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.header__list :nth-of-type(1) a{
+    background:var(--orange);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.header__icon i{
+    cursor:pointer;
+    color: var(--gray);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+/* Hero Area */
+.hero__area{
+
+}
+.hero__title{
+    font-size: 3rem;
+}
+.link{
+    text-decoration: none;
+    color: var(--black);
+    font-weight:900;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    position: relative; 
+}
+.link::after{
+    content: "";
+    width:0px;
+    height: 2px;
+    background: var(--orange);
+    position: absolute;
+    top:11px;
+    transition: all 1s ease;
+}
+.link:hover::after{
+    width:100px;
+}
+
+.link:hover{
+    color: var(--orange);
+
+}
+.hero__btn i{
+    padding: 1rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 50%;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.hero__btn i:hover{
+    background: var(--orange);
+}
+
+/* Class Area */
+.class__head h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.class__card_container{
+    background: var(--orange);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.class__card:nth-of-type(2)
+.class__card_container{
+    background: var(--blue);
+}
+
+
+
+
