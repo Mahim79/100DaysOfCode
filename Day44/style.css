@@ -1,0 +1,92 @@
+/* Colors */
+/* Font Size */
+/* Button */
+.mybtn, .hero__content button {
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem 1rem;
+  background: #EC6090;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-weight: 400;
+}
+
+.mybtn:hover, .hero__content button:hover {
+  background: #fff;
+  color: #EC6090;
+}
+
+/* Display */
+.flex, .header__area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1.1rem 2rem;
+}
+
+body {
+  background: #1F2122;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header__area {
+  flex-wrap: wrap;
+  background: #fff;
+}
+.header__inp, .header__btn, .header__list {
+  display: none;
+}
+.header__humburger {
+  font-size: 2rem;
+  color: #EC6090;
+}
+.header__btn {
+  display: none;
+}
+
+/* Main */
+main {
+  background: #27292A;
+  margin: 2rem;
+  border-radius: 20px;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero__area {
+  min-height: 50vh;
+  background-image: url(images/banner-mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.hero__content {
+  color: #fff;
+  text-align: center;
+}
+.hero__content p {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+}
+.hero__content h1 {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.hero__content h1 span {
+  color: #EC6090;
+}/*# sourceMappingURL=style.css.map */
