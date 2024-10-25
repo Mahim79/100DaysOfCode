@@ -1,0 +1,234 @@
+@import "_variables";
+@import "_extend";
+
+/* Universal Selector */
+*{
+    box-sizing: border-box;
+    margin: 0;padding:0;
+}
+.container{
+    padding: $fs1 $fs2;
+}
+body{
+    background: $body;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header{
+
+    &__area{
+        @extend .flex;
+        flex-wrap: wrap;
+        background:$white;
+    }
+    
+    &__inp,
+    &__btn,
+    &__list{
+        display: none;
+    }
+    &__humburger{
+        font-size:$fs2;
+        color: $pink;
+    }
+    &__btn{
+        display: none;
+    }
+    
+}
+/* Main */
+main{
+    background:$main-body;
+    margin: 2rem;
+    border-radius: 20px;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero{
+    
+    
+    &__area{
+        min-height: 50vh;
+        background-image: url(images/banner-mobile-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    &__content{
+        color: $white;
+        text-align: center;
+        p{
+            padding-top: 1rem;
+            font-size: $fs0;
+        }
+        h1{
+            padding:1rem 0;
+            font-size: $fs2;
+
+            span{
+                color: $pink;
+            }
+        }
+        button{
+            @extend .mybtn;
+
+        }
+
+    }
+}
+
+/* Popular Section */
+.title{
+    color: $pink;
+    padding:0.5rem;
+
+    &-modify{
+        color: $white;
+        text-decoration: underline;
+    }
+}
+.popular{
+
+    &__area{
+        background:$body;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    &__card{
+        background:$main-body;
+        margin-top:1rem;
+        padding: 1rem;
+        border-radius: 20px;
+
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    &__content{
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_left{
+            h3{
+                color: $white;
+            }
+            p{
+                color: $gray;
+                margin-top: 0.5rem;
+            }
+        }
+        &_right{
+            font-weight: bold;
+            color: $white;
+            i:nth-of-type(1){
+                margin-right: 0.5rem;
+            }
+           i:nth-of-type(2){
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+            color: $pink;
+           }
+        }
+    }
+
+    &__btn{
+        text-align: center;
+        position: relative;
+        bottom:-40px;
+        button{
+            @extend .mybtn;
+        }
+    }
+}
+
+/* Library Section */
+.library{
+    margin-top: 1rem;
+    
+    &__area{
+        background:$body;
+        padding: 1rem;
+        border-radius: 20px;
+        
+    }
+
+    &__row{
+        text-align: center;
+        margin: 2rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+        
+        img{
+            width:100px;
+            border-radius: 20px;
+        }
+        
+    }
+    &__content{
+        margin: 1rem 0;
+        @extend .flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap:1rem;
+
+        h3{
+            color: $white;
+        }
+        p{
+            color: $gray;
+            margin: 0.5rem 0;
+        }
+    }
+    &__row_btn{
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        background: none;
+        border:2px solid $gray;
+        color: $gray;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    &__row_btn-modify{
+        @extend .mybtn;
+        background: none;
+        border: 2px solid $pink;
+        color:$pink;
+    }
+
+    &__btn{
+        @extend .popular__btn;
+        button{
+            @extend .mybtn;
+        }
+    }
+}
+
+/* Footer */
+.footer{
+
+    &__area{
+        text-align: center;
+        padding: 1rem;
+        color: $white;
+        
+    }
+    &__designed{
+        padding: 1rem 0;
+    }
+    &__link{
+        color: $pink;
+        text-decoration: none;
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+    
+}
