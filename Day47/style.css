@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+
+body{
+    background: rgb(17, 17, 39);
+}
+.container{
+    width: 50%;
+    min-height: 50vh;
+    background: rgb(243, 243, 243);
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.colorBox{
+    width: 300px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+.code{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.copyCode{
+    padding: 1rem 2rem;
+    border: none;
+    background: #1d6de4;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.generateColor{
+    padding: 1rem 2rem;
+    border: none;
+    background: rgb(35, 29, 88);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+
+/* Media query */
+@media (max-width:612px) {
+    .container{
+        width: 80%;
+    }
+    .title{
+        text-align: center;
+    }
+    .colorBox{
+        width: 150px;
+        height: 120px;
+    }
+}
