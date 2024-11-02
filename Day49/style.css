@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: "Poppins", sans-serif;;
+}
+
+
+
+.search__input{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 35%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search__btn{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #f57224;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.feature__item{
+    background: #fff;
+    width: 250px;
+    height: 80px;
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.feature__title{
+    font-size: 1.2rem;
+}
+.card{
+    transition: all 0.2s ease;
+}
+.card:hover{
+    background: #f57224;
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer{
+    background: #2E2E54;
+    padding: 2rem;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+li{
+    list-style: none;
+}
