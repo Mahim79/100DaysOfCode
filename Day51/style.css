@@ -1,0 +1,63 @@
+/* Google Fonts */
+@font-face {
+  font-family: "roboto";
+  src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(Fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: "light";
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+}
+
+/*Hero Area */
+.hero__title {
+  font-family: "light";
+  font-size: 3.5rem;
+}
+
+.hero__link {
+  color: #fff;
+}
+
+.hero__link:hover {
+  color: #dc3545;
+}
+
+/* About Area */
+.about__title,
+.about__title span {
+  font-family: "light";
+  font-size: 2.5rem;
+}
+
+.choose i {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 1rem;
+  background: rgba(220, 53, 70, 0.1764705882);
+  color: #dc3545;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.choose .card:hover i {
+  background: #dc3545;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
