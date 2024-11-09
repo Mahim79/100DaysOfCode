@@ -1,0 +1,148 @@
+/* Google Fonts */
+@font-face {
+  font-family: "roboto";
+  src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(Fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: "light";
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+}
+
+/*Hero Area */
+.hero__title {
+  font-family: "light";
+  font-size: 3.5rem;
+}
+
+.hero__link {
+  color: #fff;
+}
+
+.hero__link:hover {
+  color: #dc3545;
+}
+
+/* About Area */
+.about__title,
+.about__title span {
+  font-family: "light";
+  font-size: 2.5rem;
+}
+
+.choose i {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 1rem;
+  background: rgba(220, 53, 70, 0.1764705882);
+  color: #dc3545;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.choose .card:hover i {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* Records Section */
+.records img {
+  width: 100%;
+  height: 400px;
+}
+
+.menu__title,
+.menu__title span {
+  font-family: "light";
+}
+
+.testimonial {
+  margin-top: 5rem;
+}
+
+.testi__title,
+.testi__title span {
+  font-family: "light";
+}
+
+.chefs {
+  margin-top: 8rem;
+}
+
+.chefs__title,
+.chefs__title span {
+  font-family: "light";
+}
+
+.chefs .list .card {
+  transition: all 0.5s ease;
+}
+
+.chefs .list .card:hover {
+  transform: scale(1.1);
+}
+
+.tableBook {
+  margin-top: 8rem;
+}
+
+.tableBook__title,
+.tableBook__title span {
+  font-family: "light";
+}
+
+.gallery {
+  margin-top: 8rem;
+}
+
+.gallery__title,
+.gallery__title span {
+  font-family: "light";
+}
+
+.gallery img {
+  border-radius: 10px;
+}
+
+.location {
+  margin-top: 8rem;
+}
+
+.footer {
+  margin-top: 8rem;
+}
+
+.footer__title,
+.footer__title span {
+  font-family: "light";
+}
+
+.footer__icons i {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.footer__icons i:hover {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}/*# sourceMappingURL=style.css.map */
