@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/90a5164c01.js" crossorigin="anonymous"></script>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body >
+    <header class="header">
+        <div class="header-area">
+            <div class="header-left">
+                <i class="fa-solid fa-bars humberger"></i>
+                <img src="images/logo.svg" alt="logo" class="header-logo">
+                <nav>
+                    <ul>
+                        <li><a href="#Collections">Collections</a></li>
+                        <li><a href="#Men">Men</a></li>
+                        <li><a href="#Women">Women</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="theme fa-solid fa-moon"></i>
+                <img src="images/image-avatar.png" alt="avatar">
+            </div>
+        </div>
+    </header>
+
+    <!--Hero Area-->
+    <div class="hero">
+        <div class="hero-area">
+            <div class="hero-image">
+                <img src="images/image-product-1-thumbnail.jpg" alt="shoes" class="main-img">
+                <i class="fa-solid fa-less-than"></i>
+                <i class="fa-solid fa-greater-than"></i>
+
+                <div class="thumbnail-img">
+                <img class="single" src="images/image-product-1-thumbnail.jpg" alt="thumbnail" >
+                <img class="single" src="images/image-product-2-thumbnail.jpg" alt="thumbnail">
+                <img class="single" src="images/image-product-3-thumbnail.jpg" alt="thumbnail">
+                <img class="single" src="images/image-product-4-thumbnail.jpg" alt="thumbnail">
+                </div>
+            </div>
+            <div class="hero-right">
+            <div class="product-info">
+                <p>Sneaker Company</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+
+            <div class="product-amount">
+                <div class="sub-amount">
+                <h2 class="price">$125.00</h2>
+                <p>50%</p>
+                </div>
+                <del class="regular">$250.00</del>
+            </div>
+
+            <div class="product-plus-minus">
+                <button class="minus">-</button>
+                <p class="quantity">1</p>
+                <button class="plus">+</button>
+            </div>
+
+            <div class="addtocart">
+                <i class="fa-solid fa-cart-shopping fa-flip"></i>
+                <p class="cart">Add to cart</p>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

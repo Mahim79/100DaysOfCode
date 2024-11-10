@@ -1,0 +1,31 @@
+
+
+.dark {
+    background: #1b264b ;
+}
+.dark .header{
+    background: #1b264b 
+}
+
+.dark .humberger{
+    color:#fff
+}
+.dark .header-logo{
+    background: #fff;
+    padding: 0.5rem;
+}
+.dark   nav ul li a:hover{
+    color: #fff;
+}
+.dark .hero{
+    background: #1b264b ;
+}
+.dark .product-info h1{
+    color:#fff;
+}
+.dark .product-amount h2{
+    color:#fff;
+}
+.dark .product-amount del{
+    color:#ffffffc5;
+}
