@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/90a5164c01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">To Do list</h1>
+        
+        <div class="inp-area">
+            <input type="text" placeholder="Task name" class="add-inp">
+            <button type="button" onclick="addTask()" class="add-btn">Add</button>
+        </div>
+
+        <div class="list-area">
+            <ul class="list">
+                <!-- <li class="item">
+                    <input type="checkbox">
+                    My Task
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                </li>
+
+                <li class="item">
+                    <input type="checkbox">
+                    My Task
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                </li> -->
+
+                <!-- <li class="item">
+                    <input type="checkbox">
+                    My Task
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                </li>
+                 -->
+            </ul>
+        </div>
+
+        <button type="button" onclick="DeleteAll()" class="all-delete">Delete Checked Items</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
