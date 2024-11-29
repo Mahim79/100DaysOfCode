@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #0b0918;
+}
+
+.container{
+    margin: 5rem auto;
+}
+.portfolio__btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.btn{
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    background: red;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.portfolio__btns .active{
+    background: red;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.portfolio__img_list{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+    align-content:start;
+}
+@media (min-width:550px) {
+    .portfolio__img_list{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+.portfolio__img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+}
+.portfolio__img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card1{
+    grid-row:span 3
+}
+.app2{
+    grid-row: span 2;
+}
+.app3{
+    grid-row: span 2;
+}
+.web2{
+    grid-row: span 3;
+}
+.web3{
+   grid-row: span 2;
+}
+
