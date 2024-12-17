@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Implement</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/90a5164c01.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark:bg-blue-950">
+    <header class="flex items-center justify-between p-5 sticky top-0 backdrop-blur-lg">
+        <div>
+            <img src="Img/logo.svg" width="60" alt="logo">
+        </div>
+
+        <div class="hidden md:block">
+            <ul class="flex items-center justify-center gap-3">
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Home</a></li>
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Company</a></li>
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">MarketPlace</a></li>
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Features</a></li>
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Team</a></li>
+                <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-center justify-center gap-10">
+            <i class="theme fa-solid cursor-pointer text-2xl fa-moon text-purple-900"></i>
+            <button class="bg-purple-700 px-6 py-3 rounded-lg hover:bg-purple-800 text-white">Download</button>
+            <div class="md:hidden cursor-pointer">
+                <i class="menubar fa-solid bg-purple-700 px-3 py-2 rounded-md text-white fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="slider bg-black sticky top-0 hidden">
+        <ul class="flex flex-col items-center justify-center gap-3  fixed top-24 left-[50%] translate-x-[-50%] backdrop-blur-lg w-full py-5">
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Home</a></li>
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Company</a></li>
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">MarketPlace</a></li>
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Features</a></li>
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Team</a></li>
+            <li><a class="dark:text-white dark:hover:text-purple-700  hover:text-purple-700 font-semibold " href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="hero lg:flex items-center justify-around p-5">
+        <div class="p-5">
+            <h1 class="text-5xl font-bold dark:text-white">Building digital products & brands.</h1>
+            <p class="text-gray-400 dark:text-gray-300 text-xl">This free and open-source landing page template was built using the utility classes from Tailwind CSS and based on the components from the Flowbite Library and the Blocks System.</p>
+            <div class="mt-5">
+                <button class=" px-6 py-3 bg-transparent border rounded-lg hover:bg-gray-200 dark:text-white dark:hover:bg-blue-900">
+                    <i class="fa-brands fa-github"></i>
+                    View on GitHub
+                </button>
+                <button class="px-6 py-3 bg-transparent border rounded-lg hover:bg-gray-200 dark:text-white dark:hover:bg-blue-900">
+                    <i class="fa-brands fa-figma"></i>
+                    Get Figma File
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <img src="Img/hero.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        const html = document.querySelector("html")
+        const theme = document.querySelector(".theme")
+        
+        theme.addEventListener("click",function(){
+            html.classList.toggle("dark")
+            if(theme.classList == "theme fa-solid cursor-pointer text-2xl fa-moon text-purple-900"){
+                theme.classList.remove("fa-moon")
+                theme.classList.remove("text-purple-900")
+                theme.classList.add("fa-sun")
+                theme.classList.add("text-white")
+                
+            }else{
+                theme.classList.remove("fa-sun")
+                theme.classList.remove("text-white")
+                theme.classList.add("fa-moon")
+                theme.classList.add("text-purple-900")
+            }
+        })
+
+        const slider =document.querySelector(".slider")
+        const menubar =document.querySelector(".menubar")
+
+        menubar.addEventListener("click",function(){
+            if(menubar.classList.contains("fa-bars")){
+                menubar.classList.remove("fa-bars")
+                menubar.classList.add("fa-x")
+                slider.style ="display:block"
+            }else{
+                menubar.classList.remove("fa-x")
+                menubar.classList.add("fa-bars")
+                slider.style  ="display:none"
+            }
+        })
+        
+    </script>
+</body>
+</html>
