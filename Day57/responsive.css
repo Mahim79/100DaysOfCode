@@ -1,0 +1,19 @@
+@media (max-width:572px) {
+    .nav-item{
+        display: none;
+    }
+    
+    .slider .nav-item{
+        display: block;
+    }
+    .nav-bar{
+        display: block;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .slider .nav-list{
+        width: 100%;
+    }
+}
