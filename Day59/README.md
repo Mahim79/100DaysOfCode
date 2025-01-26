@@ -3,7 +3,6 @@
 
 It's a ReactJS mini project of 100 days challenges.In this app you can create a task, update and delete a task.There has been used Context API and Reducer function.Also used JSON placeholder api like realtime database. 
 
-npm run start-api
 Live link :https://superlative-squirrel-589c12.netlify.app/
 
 
